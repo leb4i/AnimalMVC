@@ -1,0 +1,102 @@
+/* _content/animalsMVC/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-8sxodr799x] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-8sxodr799x] {
+  color: #0077cc;
+}
+
+.btn-primary[b-8sxodr799x] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-8sxodr799x], .nav-pills .show > .nav-link[b-8sxodr799x] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-8sxodr799x] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-8sxodr799x] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-8sxodr799x] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-8sxodr799x] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html[b-8sxodr799x], body[b-8sxodr799x] {
+  height: 100%;
+}
+
+body[b-8sxodr799x] {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main-content[b-8sxodr799x] {
+  padding-top: 1.5rem;
+  /* include space for the fixed footer (64px) so content won't be covered */
+  padding-bottom: calc(2rem + 64px);
+  flex: 1 0 auto;
+}
+
+/* New site footer styles */
+.site-footer[b-8sxodr799x] {
+  width: 100%;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #e9ecef;
+  font-size: 1rem;
+  line-height: 1.4;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 64px; /* fixed height used in main-content padding */
+  display: flex;
+  align-items: center;
+  z-index: 1030; /* above normal content */
+  box-shadow: 0 -6px 20px rgba(0,0,0,0.08);
+}
+
+.site-footer .footer-link[b-8sxodr799x] {
+  color: #adb5bd;
+}
+
+.site-footer .footer-link:hover[b-8sxodr799x] {
+  color: #ffffff;
+}
+
+.site-footer .footer-social-link[b-8sxodr799x] {
+  color: #adb5bd;
+  font-size: 1.25rem;
+}
+
+.site-footer .footer-social-link:hover[b-8sxodr799x] {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Footer removed from layout - related styles deleted */
+
+/* Page-specific spacing for animals list */
+.animals-page .card[b-8sxodr799x] {
+  margin-bottom: 1rem;
+}

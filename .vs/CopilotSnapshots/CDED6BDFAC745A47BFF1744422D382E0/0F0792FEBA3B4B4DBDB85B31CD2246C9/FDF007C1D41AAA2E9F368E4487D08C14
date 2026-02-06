@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Search Animals";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <!-- Search Header -->
+            <div class="text-center mb-4">
+                <div class="search-icon-wrapper mb-3">
+                    <i class="bi bi-search" style="font-size: 3rem; color: #667eea;"></i>
+                </div>
+                <h2 class="fw-bold mb-2">Search Animals</h2>
+                <p class="text-muted">Find animals by name or type</p>
+            </div>
+
+            <!-- Search Form Card -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <form asp-action="ShowSearchResults" method="post">
+                        <div class="mb-4">
+                            <label for="SearchPhrase" class="form-label fw-semibold">
+                                <i class="bi bi-filter-circle"></i> Search Term
+                            </label>
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-light">
+                                    <i class="bi bi-search"></i>
+                                </span>
+                                <input 
+                                    name="SearchPhrase" 
+                                    id="SearchPhrase"
+                                    class="form-control" 
+                                    placeholder="Enter animal name or type (e.g., Lion, Cat, Dog)" 
+                                    autocomplete="off"
+                                    required />
+                            </div>
+                            <div class="form-text">
+                                <i class="bi bi-info-circle"></i> Search by animal name (e.g., "Simba") or type (e.g., "Lion")
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-between">
+                            <button type="submit" class="btn btn-primary btn-lg px-5">
+                                <i class="bi bi-search"></i> Search
+                            </button>
+                            <a asp-action="Index" class="btn btn-outline-secondary btn-lg px-4">
+                                <i class="bi bi-arrow-left"></i> Back to List
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Quick Tips -->
+            <div class="card bg-light border-0">
+                <div class="card-body">
+                    <h6 class="card-title fw-bold mb-3">
+                        <i class="bi bi-lightbulb text-warning"></i> Search Tips
+                    </h6>
+                    <ul class="mb-0 small">
+                        <li>Search is <strong>case-insensitive</strong> - "lion" and "Lion" work the same</li>
+                        <li>Use <strong>partial matches</strong> - searching "cat" finds "Cat", "Wildcat", etc.</li>
+                        <li>Try searching by <strong>species type</strong> for broader results</li>
+                        <li>Leave empty and click search to see all animals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.search-icon-wrapper {
+    display: inline-block;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    color: white;
+}
+.input-group-text {
+    border: 1px solid #ced4da;
+}
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+</style>

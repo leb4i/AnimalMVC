@@ -1,0 +1,251 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\animals\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\animals\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\animals\\showsearchform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\animals\\showsearchform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\animals\\showsearchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\animals\\showsearchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\wwwroot\\frontend\\frontend.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:wwwroot\\frontend\\frontend.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:areas\\identity\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|c:\\users\\user\\music\\asp.net\\animalsmvc\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C94286C7-C90C-42C4-9ABF-3BBEC4B55F79}|animalsMVC.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-06T17:54:12.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:47:23.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-02-06T17:41:51.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "frontend.css",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\wwwroot\\frontend\\frontend.css",
+              "RelativeDocumentMoniker": "wwwroot\\frontend\\frontend.css",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\wwwroot\\frontend\\frontend.css",
+              "RelativeToolTip": "wwwroot\\frontend\\frontend.css",
+              "ViewState": "AgIAAHMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-06T17:24:38.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAHwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:23:04.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AgIAACUAAAAAAAAAAADgvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-02-06T17:21:43.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ShowSearchResults.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Animals\\ShowSearchResults.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animals\\ShowSearchResults.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Animals\\ShowSearchResults.cshtml",
+              "RelativeToolTip": "Views\\Animals\\ShowSearchResults.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:18:35.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimalsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Controllers\\AnimalsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnimalsController.cs",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Controllers\\AnimalsController.cs",
+              "RelativeToolTip": "Controllers\\AnimalsController.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T17:18:13.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShowSearchForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Animals\\ShowSearchForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animals\\ShowSearchForm.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Animals\\ShowSearchForm.cshtml",
+              "RelativeToolTip": "Views\\Animals\\ShowSearchForm.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:17:51.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:13:39.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:12:25.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Animals\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Animals\\Details.cshtml",
+              "ToolTip": "C:\\Users\\User\\Music\\asp.net\\animalsMVC\\Views\\Animals\\Details.cshtml",
+              "RelativeToolTip": "Views\\Animals\\Details.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-06T17:09:03.493Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1896,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - animalsMVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/animalsMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/frontend/frontend.css" asp-append-version="true" /> 
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/logo.svg" alt="animalsMVC Logo" style="height: 40px;" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Animals" asp-action="Index">Animals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Animals" asp-action="ShowSearchForm">Search</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="flex-fill">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links -->
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Quick Links</h6>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a asp-controller="Home" asp-action="Index" class="footer-link">
+                                        <i class="bi bi-house-door me-2"></i>Home
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a asp-controller="Animals" asp-action="Index" class="footer-link">
+                                        <i class="bi bi-grid-3x3-gap me-2"></i>Browse Animals
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a asp-controller="Animals" asp-action="ShowSearchForm" class="footer-link">
+                                        <i class="bi bi-search me-2"></i>Search
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a asp-controller="Home" asp-action="Privacy" class="footer-link">
+                                        <i class="bi bi-shield-check me-2"></i>Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Connect & Social -->
+                <div class="col-md-6">
+                    <h6 class="text-uppercase fw-bold mb-3 text-white">Connect With Us</h6>
+                    <p class="text-white-50 small mb-3">
+                        <i class="bi bi-info-circle me-2"></i>Discover amazing animals from around the world
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="footer-social-icon" title="Facebook" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" title="Twitter" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" title="Instagram" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-social-icon" title="GitHub" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-3" />
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small mb-0 text-white-50">
+                        <i class="bi bi-c-circle me-1"></i>2026 Animals MVC. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small mb-0 text-white-50">
+                        Built with <i class="bi bi-heart-fill text-danger"></i> and ASP.NET Core
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

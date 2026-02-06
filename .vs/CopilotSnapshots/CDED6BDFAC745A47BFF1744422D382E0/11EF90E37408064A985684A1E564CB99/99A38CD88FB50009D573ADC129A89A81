@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="hero-section text-center py-5">
+    <div class="container">
+        <img src="~/logo.svg" alt="Animals MVC Logo" class="mb-4" style="height: 120px;" />
+        <h1 class="display-3 fw-bold mb-3">Welcome to Animals MVC</h1>
+        <p class="lead mb-4">Explore and discover amazing animals from around the world. Browse our collection, learn about different species, and manage your favorite creatures.</p>
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <a asp-controller="Animals" asp-action="Index" class="btn btn-primary btn-lg px-4 gap-3">
+                <i class="bi bi-grid-3x3-gap"></i> Browse Animals
+            </a>
+            <a asp-controller="Animals" asp-action="ShowSearchForm" class="btn btn-outline-secondary btn-lg px-4">
+                <i class="bi bi-search"></i> Search
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-primary bg-gradient text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <i class="bi bi-binoculars" style="font-size: 1.5rem;"></i>
+                    </div>
+                    <h3 class="h5 card-title">Discover</h3>
+                    <p class="card-text">Browse through our extensive collection of animals and learn about their unique characteristics and habitats.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-success bg-gradient text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <i class="bi bi-images" style="font-size: 1.5rem;"></i>
+                    </div>
+                    <h3 class="h5 card-title">Gallery</h3>
+                    <p class="card-text">View stunning images of animals in their natural environment and explore detailed photo galleries.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <div class="feature-icon bg-info bg-gradient text-white rounded-circle mb-3 mx-auto d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                        <i class="bi bi-search" style="font-size: 1.5rem;"></i>
+                    </div>
+                    <h3 class="h5 card-title">Search</h3>
+                    <p class="card-text">Find specific animals quickly using our advanced search feature. Filter by name or type.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+.hero-section .btn-primary {
+    background-color: white;
+    color: #667eea;
+    border: none;
+}
+.hero-section .btn-primary:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.hero-section .btn-outline-secondary {
+    border-color: white;
+    color: white;
+}
+.hero-section .btn-outline-secondary:hover {
+    background-color: white;
+    color: #667eea;
+}
+</style>

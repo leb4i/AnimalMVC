@@ -1,0 +1,61 @@
+﻿@model animalsMVC.Models.Animal
+
+@{
+    ViewData["Title"] = $"Детайли - {Model?.Name}";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Left column: Animal details -->
+        <div class="col-lg-5 mb-4">
+            <div class="card shadow-sm mb-3">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">@Model?.Name</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row mb-0">
+                        <dt class="col-sm-5 text-muted">Име:</dt>
+                        <dd class="col-sm-7 fw-bold">@Model?.Name</dd>
+
+                        <dt class="col-sm-5 text-muted">Вид:</dt>
+                        <dd class="col-sm-7">@Model?.Type</dd>
+
+                        <dt class="col-sm-5 text-muted">Възраст:</dt>
+                        <dd class="col-sm-7">@Model?.Age @(Model?.Age == 1 ? "година" : "години")</dd>
+
+                        <dt class="col-sm-5 text-muted">Домашно животно:</dt>
+                        <dd class="col-sm-7">
+                            @if (Model?.IsDomestic == true)
+                            {
+                                <span class="badge bg-success">Да</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">Не</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="d-grid gap-2">
+                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.Id">
+                    <i class="bi bi-pencil-square"></i> Редактирай
+                </a>
+                <a class="btn btn-outline-secondary" asp-action="Index">
+                    <i class="bi bi-arrow-left"></i> Назад към списъка
+                </a>
+            </div>
+        </div>
+
+        <!-- Right column: Gallery -->
+        <div class="col-lg-7">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <partial name="_Gallery" model="Model" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

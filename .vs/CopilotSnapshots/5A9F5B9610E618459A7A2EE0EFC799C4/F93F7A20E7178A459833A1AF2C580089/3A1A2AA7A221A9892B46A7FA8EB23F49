@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - animalsMVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/animalsMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/frontend/frontend.css" asp-append-version="true" /> 
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/logo.svg" alt="animalsMVC Logo" style="height: 45px;" class="me-2" />
+                    <span class="fw-bold d-none d-md-inline" style="color: #667eea;">Animals MVC</span>
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door me-1"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" asp-area="" asp-controller="Animals" asp-action="Index">
+                                <i class="bi bi-grid-3x3-gap me-1"></i>Animals
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" asp-area="" asp-controller="Animals" asp-action="ShowSearchForm">
+                                <i class="bi bi-search me-1"></i>Search
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Privacy">
+                                <i class="bi bi-shield-check me-1"></i>Privacy
+                            </a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container main-content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer py-3 bg-dark text-white-50">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <!-- Links -->
+                <div class="mb-2 mb-md-0">
+                    <a asp-controller="Home" asp-action="Index" class="footer-link me-3">Home</a>
+                    <a asp-controller="Animals" asp-action="Index" class="footer-link me-3">Animals</a>
+                    <a asp-controller="Animals" asp-action="ShowSearchForm" class="footer-link me-3">Search</a>
+                    <a asp-controller="Home" asp-action="Privacy" class="footer-link">Privacy</a>
+                </div>
+
+                <!-- Social -->
+                <div class="mb-2 mb-md-0">
+                    <a href="#" class="footer-social-link me-2" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="footer-social-link me-2" title="Twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="footer-social-link me-2" title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="footer-social-link" title="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center text-md-end">
+                    <small>&copy; 2026 Animals MVC</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

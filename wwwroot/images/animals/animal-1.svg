@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <circle cx="120" cy="150" r="60" fill="#ffcc00"/>
+  <rect x="220" y="110" width="120" height="80" rx="20" fill="#6ac47a"/>
+  <text x="200" y="260" font-size="20" fill="#333">Animal 1</text>
+</svg>

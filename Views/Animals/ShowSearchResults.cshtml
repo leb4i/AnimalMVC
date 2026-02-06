@@ -1,0 +1,132 @@
+@model IEnumerable<animalsMVC.Models.Animal>
+
+@{
+    ViewData["Title"] = "Search Results";
+    var searchPhrase = ViewBag.SearchPhrase as string;
+    var resultCount = ViewBag.ResultCount as int? ?? 0;
+}
+
+<div class="container mt-4">
+    <!-- Search Results Header -->
+    <div class="mb-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+                <h2 class="mb-2">
+                    <i class="bi bi-search"></i> Search Results
+                </h2>
+                @if (!string.IsNullOrWhiteSpace(searchPhrase))
+                {
+                    <p class="text-muted mb-0">
+                        Found <strong>@resultCount</strong> result(s) for "<strong>@searchPhrase</strong>"
+                    </p>
+                }
+                else
+                {
+                    <p class="text-muted mb-0">
+                        Showing all <strong>@resultCount</strong> animal(s)
+                    </p>
+                }
+            </div>
+            <a asp-action="ShowSearchForm" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-repeat"></i> New Search
+            </a>
+        </div>
+        <hr />
+    </div>
+
+    @if (resultCount == 0)
+    {
+        <!-- No Results Found -->
+        <div class="text-center py-5">
+            <div class="mb-4">
+                <i class="bi bi-search" style="font-size: 4rem; color: #ccc;"></i>
+            </div>
+            <h3 class="text-muted mb-3">No animals found</h3>
+            <p class="text-muted mb-4">
+                We couldn't find any animals matching "@searchPhrase".<br />
+                Try a different search term or browse all animals.
+            </p>
+            <div class="d-flex gap-2 justify-content-center">
+                <a asp-action="ShowSearchForm" class="btn btn-primary">
+                    <i class="bi bi-search"></i> Try Another Search
+                </a>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-grid-3x3-gap"></i> Browse All Animals
+                </a>
+            </div>
+        </div>
+    }
+    else
+    {
+        <!-- Results Grid -->
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                var firstImage = "";
+                if (!string.IsNullOrWhiteSpace(item.ImageFiles))
+                {
+                    var parts = item.ImageFiles.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
+                    if (parts.Any())
+                    {
+                        firstImage = Url.Content($"~/images/animals/{parts[0]}");
+                    }
+                }
+
+                if (string.IsNullOrEmpty(firstImage))
+                {
+                    firstImage = Url.Content($"~/images/animals/{item.Id}-preview.jpg");
+                }
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm animal-result-card">
+                        <img src="@firstImage" 
+                             alt="@item.Name" 
+                             class="card-img-top" 
+                             style="height: 200px; object-fit: cover;"
+                             onerror="this.src='/images/animals/animal-1.svg';" />
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">@item.Name</h5>
+                            <p class="card-text text-muted mb-2">
+                                <i class="bi bi-tag"></i> @item.Type
+                            </p>
+                            <p class="card-text text-muted mb-3">
+                                <i class="bi bi-calendar"></i> @item.Age @(item.Age == 1 ? "year" : "years") old
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm flex-grow-1">
+                                    <i class="bi bi-eye"></i> View Details
+                                </a>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-secondary btn-sm">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- Pagination placeholder / Back to search -->
+        <div class="text-center mt-5">
+            <a asp-action="ShowSearchForm" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-left"></i> Back to Search
+            </a>
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-list"></i> View All Animals
+            </a>
+        </div>
+    }
+</div>
+
+<style>
+.animal-result-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.animal-result-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+}
+</style>

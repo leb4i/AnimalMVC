@@ -1,0 +1,126 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+            <!-- Header -->
+            <div class="text-center mb-5">
+                <div class="mb-3">
+                    <i class="bi bi-shield-check" style="font-size: 3.5rem; color: #667eea;"></i>
+                </div>
+                <h1 class="display-5 fw-bold mb-3">Privacy Policy</h1>
+                <p class="lead text-muted">Your privacy is important to us. Learn how we protect your data.</p>
+                <p class="text-muted small">Last updated: February 2026</p>
+            </div>
+
+            <!-- Content Cards -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        <i class="bi bi-info-circle text-primary"></i> Information We Collect
+                    </h3>
+                    <p class="mb-2">When you use Animals MVC, we may collect the following information:</p>
+                    <ul class="mb-0">
+                        <li><strong>Account Information:</strong> Email address and username when you register</li>
+                        <li><strong>Animal Data:</strong> Information about animals you add or view (Admin users only)</li>
+                        <li><strong>Usage Data:</strong> Pages visited, search queries, and time spent on the site</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        <i class="bi bi-lock text-success"></i> How We Use Your Information
+                    </h3>
+                    <p class="mb-2">We use collected information to:</p>
+                    <ul class="mb-0">
+                        <li>Provide and maintain the Animals MVC service</li>
+                        <li>Allow you to browse and search our animal database</li>
+                        <li>Enable Admin users to manage animal records</li>
+                        <li>Improve user experience and site functionality</li>
+                        <li>Communicate important updates about the service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        <i class="bi bi-shield-lock text-warning"></i> Data Security
+                    </h3>
+                    <p class="mb-2">We take data security seriously:</p>
+                    <ul class="mb-0">
+                        <li>All passwords are encrypted using industry-standard hashing</li>
+                        <li>Access to animal data management is restricted to Admin users only</li>
+                        <li>We use HTTPS to secure data transmission</li>
+                        <li>Regular security updates and monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        <i class="bi bi-cookie text-info"></i> Cookies & Tracking
+                    </h3>
+                    <p class="mb-2">We use cookies to:</p>
+                    <ul class="mb-0">
+                        <li>Keep you logged in during your session</li>
+                        <li>Remember your preferences</li>
+                        <li>Analyze site traffic and usage patterns</li>
+                    </ul>
+                    <p class="mt-3 mb-0 small text-muted">You can control cookies through your browser settings.</p>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        <i class="bi bi-person-check text-secondary"></i> Your Rights
+                    </h3>
+                    <p class="mb-2">You have the right to:</p>
+                    <ul class="mb-0">
+                        <li>Access your personal data</li>
+                        <li>Request correction of inaccurate data</li>
+                        <li>Request deletion of your account and data</li>
+                        <li>Opt-out of non-essential data collection</li>
+                        <li>Export your data in a portable format</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4 bg-light border-0">
+                <div class="card-body p-4">
+                    <h3 class="h5 fw-bold mb-3">
+                        <i class="bi bi-envelope text-primary"></i> Contact Us
+                    </h3>
+                    <p class="mb-2">If you have questions about this Privacy Policy or your data, please contact us:</p>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="bi bi-envelope-fill text-muted"></i> Email: <strong>privacy@animalsmvc.com</strong></li>
+                        <li><i class="bi bi-house-fill text-muted"></i> Address: <strong>123 Animal Street, Wildlife City</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Back to Home -->
+            <div class="text-center mt-5 mb-5">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary btn-lg">
+                    <i class="bi bi-house"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1) !important;
+}
+</style>
